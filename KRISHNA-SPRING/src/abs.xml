@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="car" class="Car" abstract="true">
+		<property name="cc" value="1800" />
+		<property name="name" value="Verna" />
+		<property name="type" value="Petrol" />
+	</bean>
+	
+	<bean id = "alpha" class= "Car" parent="car">
+		<property name="name" value = "M-Baleno"/>
+	</bean>
+
+	<bean id= "alphadiesel" class= "Car" parent="car">
+		<property name = "name" value = "Maleno"/>
+	</bean>
+</beans>
