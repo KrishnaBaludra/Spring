@@ -17,7 +17,7 @@ public class EmpHql {
 		SessionFactory sf = config.buildSessionFactory();
 		Session ses = sf.openSession();
 		Transaction tx = ses.beginTransaction();
-		Query q = ses.createQuery("from EmpTable");
+		Query q = ses.createQuery("select e.id from EmpTable e where sal>100");
 		List<EmpTable> list = q.list();
 		System.out.println(list);
 		ses.save(list);

@@ -11,7 +11,12 @@
 		<property name="connection.password">1234</property>
 		<property name="dialect">org.hibernate.dialect.Oracle10gDialect</property>
 		<property name="show_sql">true</property>
-		<property name="hbm2ddl.auto">update</property>
+		<property name="hbm2ddl.auto">create</property>
+		<mapping class="com.ex.entity.EmpAdd" />
+		<mapping class="com.ex.entity.EmpAdd2" />
+		<mapping class="com.ex.entity.Address" />
 		<mapping class="com.ex.entity.EmpTable" />
+
+
 	</session-factory>
 </hibernate-configuration>
