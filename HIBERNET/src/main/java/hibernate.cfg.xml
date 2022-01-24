@@ -16,7 +16,8 @@
 		<mapping class="com.ex.entity.EmpAdd2" />
 		<mapping class="com.ex.entity.Address" />
 		<mapping class="com.ex.entity.EmpTable" />
-
-
+		<mapping class="com.ex.entity.Worker" />
+		<mapping class="com.ex.entity.RegularWorker" />
+		<mapping class="com.ex.entity.ConWorker" />
 	</session-factory>
 </hibernate-configuration>

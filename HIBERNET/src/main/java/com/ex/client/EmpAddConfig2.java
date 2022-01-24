@@ -29,6 +29,7 @@ public class EmpAddConfig2 {
 		add2.setCity("Hyderabad");
 		
 		List <Address> addlist = new ArrayList<>();
+		
 		addlist.add(add);
 		addlist.add(add2);
 		
